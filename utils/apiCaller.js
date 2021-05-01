@@ -3,7 +3,7 @@ const path = require('path');
 const responseParser = require(path.join(__dirname, 'responseParser'));
 const Video = require(path.join(__dirname, '../models/video'));
 
-// For multiple Google API keys, please specify as a single string separated by `|`
+// For multiple Google API keys, please specify as a single string separated by ` | `
 const AUTH_KEY = process.env.API_KEY.split(` | `); 
 
 let youtubeAPI = new googleApis.youtube_v3.Youtube({
